@@ -11,7 +11,7 @@ client.on("ready", () => {
 });
 
 const openai = new OpenAI({
-  apiKey: process.env.OpenAI_kEY,
+  apiKey: process.env.OPENAI_API_KEY,
 });
 
 client.on("messageCreate", async (message) => {
@@ -87,4 +87,4 @@ client.on("messageCreate", async (message) => {
 });
 
 
-client.login(process.env.TOKEN);
+client.login(process.env.DISCORD_TOKEN);
